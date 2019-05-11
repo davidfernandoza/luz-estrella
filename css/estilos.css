@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  color: #3A3A3A;
+}
+main{
+  background-color: #F1EDCA;
+  overflow-x: hidden;
+}
+h1, h2 {
+  font-size: 80px;
+  width: 100%;
+  margin: 50px 30px 0 30px;
+}
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mensaje{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mensaje p{
+  width: 100%;
+  margin: 50px 30px 0 30px;
+}
+span{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.galeria{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galeria_contenedor{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card{
+  width: 100%;
+  border: 1px solid #C9C9C9;
+  border-radius: 10px;
+  margin: 30px 10px 0 10px;
+  text-align: center;
+}
+.foto {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -webkit-filter: sepia(40%);
+}
+h3{
+  text-align: center;
+  width: 80%;
+  margin: 30px 0 30px 0;
+
+}
+.card article {
+  display: flex;
+}
+.corazon{
+  width: 20%;
+  height: 80px;
+  margin: 5px 30px 0 0;
+}
+
+@media (min-width: 480px){
+  .galeria_contenedor{
+    display: inline;
+    column-count: 2;
+    margin: 0 20px 20px 20px;
+  }
+  .card{
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+
+  }
+
+}
+@media (min-width: 1024px){
+  .galeria_contenedor{
+    display: inline;
+    column-count: 4;
+  }
+  .card{
+    width: 95%;
+  }
+ main{
+   margin: 30px 30px 30px 30px;
+   padding-bottom: 40px;
+   border-radius: 20px;
+ }
+
+}
